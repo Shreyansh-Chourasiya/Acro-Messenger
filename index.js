@@ -32,7 +32,7 @@ io.on('connection', socket => {
             .to(user.room)
             .emit(
                 'message',
-                formatMessage(`${user.username} has joined the room`)
+                formatMessage("Server", `${user.username} has joined the room`)
             );
 
         // Current active users and room name
